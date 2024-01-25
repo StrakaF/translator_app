@@ -5,6 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Body styling */
 body{
     display: flex;
     align-items: center;
@@ -13,6 +14,7 @@ body{
     background: #43c0f6;
 }
 
+/*Container styling*/
 .container{
     width: 690px;
     background: #fff;
@@ -20,6 +22,7 @@ body{
     padding: 30px;
 }
 
+/*Wrapper styling*/
 .wrapper{
     border: 1px solid #bbb;
     border-radius: 6px;
@@ -30,6 +33,12 @@ body{
     border-bottom: 1px solid #bbb;
 }
 
+.text-input .to-text {
+    border-left: 1px solid #bbb;
+    border-radius: 0px;
+}
+
+/*Textarea styling*/
 .text-input textarea{
     height: 250px;
     width: 100%;
@@ -40,4 +49,52 @@ body{
     border: none;
     outline: none;
     background: none;
+}
+
+/*Controls*/
+.controls, li, .icons, .icons i{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls{
+    list-style: none;
+    padding: .75rem .9375rem;
+}
+
+.controls .row.from .icons{
+    padding-right: 15px;
+    border-right: 1px solid #bbb;
+}
+
+.controls .row.to .icons{
+    padding-left: 15px;
+    border-left: 1px solid #bbb;
+}
+
+.controls .icons{
+    width: 38%;
+}
+
+.controls .icons i{
+    width: 3.125rem;
+    color: #9f9f9f;
+    font-size: .875rem;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.controls .row select {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.125rem;
+}
+
+.controls .exchange {
+    color: #9f9f9f;
+    font-size: 1rem;
+    cursor: pointer;
+
 }
