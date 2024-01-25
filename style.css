@@ -19,7 +19,25 @@ body{
     border-radius: 10px;
     padding: 30px;
 }
+
 .wrapper{
     border: 1px solid #bbb;
     border-radius: 6px;
+}
+
+.wrapper .text-input {
+    display: flex;
+    border-bottom: 1px solid #bbb;
+}
+
+.text-input textarea{
+    height: 250px;
+    width: 100%;
+    font-size: 1.125rem;
+    border-radius: 5px;
+    padding: .625rem .9375rem;
+    resize: none;
+    border: none;
+    outline: none;
+    background: none;
 }
