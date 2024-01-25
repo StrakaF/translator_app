@@ -19,3 +19,7 @@ body{
     border-radius: 10px;
     padding: 30px;
 }
+.wrapper{
+    border: 1px solid #bbb;
+    border-radius: 6px;
+}
