@@ -2,7 +2,8 @@ const fromText = document.querySelector(".from-text"),
 toText = document.querySelector(".to-text"),
 selectTag = document.querySelectorAll("select"),
 exchangeIcon = document.querySelector(".exchange"),
-translateBtn = document.querySelector("button");
+translateBtn = document.querySelector("button"),
+icons = document.querySelectorAll(".row i");
 
 selectTag.forEach((tag, id)=> {
     for( const country_code in countries ){
@@ -20,12 +21,12 @@ selectTag.forEach((tag, id)=> {
 
 exchangeIcon.addEventListener("click", () => {
     // exchange of languages and text areas
-    let tempText = fromText.value,
-    tempLang = selectTag[0].value;
-    fromText.value = toText.value;
-    selectTag[0].value = selectTag[1].value;
-    toText.value = tempText;
-    selectTag[1].value = tempLang;
+    let tempText = fromText.value, //text
+    tempLang = selectTag[0].value;  //lang
+    fromText.value = toText.value;  //text
+    selectTag[0].value = selectTag[1].value;  //lang
+    toText.value = tempText;   //text
+    selectTag[1].value = tempLang;  //lang
 });
 
 translateBtn.addEventListener("click", () => {
@@ -38,4 +39,18 @@ translateBtn.addEventListener("click", () => {
     fetch(apiUrl).then(res => res.json()).then(data => {
         toText.value = data.responseData.translatedText;
     })
+});
+
+icons.forEach(icon => {
+    icon.addEventListener("click", ({target}) => {
+        if(target.classList.contains("fa-copy")){
+            if(target.id == "from") {
+                
+            } else {
+                
+            }
+        } else {
+            
+        }
+    });
 });
